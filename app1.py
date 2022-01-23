@@ -7,7 +7,7 @@ img4 = Image.open('images/KNN.png')
 img5 = Image.open('images/flowchart.png')
 
 def app():
-    st.markdown('<h2 style="background-color:Grey; border-radius:5px; padding:5px 15px ; text-align:center ; font-family:arial;color:white">Student-Performance-Lab</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 style="background-color:Grey; border-radius:5px; padding:5px 15px ; text-align:center ; font-family:arial;color:white">Student Performance-Lab</h2>', unsafe_allow_html=True)
     st.markdown('<h4 style="border: inset 1px white; border-radius:4px; padding:2px 15px">Student Performance-Lab : <i>Analyzer</i></h4>', unsafe_allow_html=True)
     col1, col2 = st.beta_columns((1, 2))
     with col1:
