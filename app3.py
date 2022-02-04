@@ -79,6 +79,13 @@ def app():
 
     def format_func24(options):
         return choices24[options]
+    
+    def format_func25(options):
+        return choices25[options]
+    
+    def format_func26(options):
+        return choices26[options]
+    
     choices1 = {1: "Male", 2: "Female", 3: "Others"}
     choices2 = {0: "None", 1: "primary-education 4th grade", 2: "5th-9h", 3: "secondary", 4: "higher"}
     choices3 = {0: "None", 1: "primary-education 4th grade", 2: "5th-9h", 3: "secondary", 4: "higher"}
@@ -103,6 +110,8 @@ def app():
     choices22 = {1: "very low", 2: "low", 3: "medium", 4: "high", 5: "very high"}
     choices23 = {1: "very low", 2: "low", 3: "medium", 4: "high", 5: "very high"}
     choices24 = {1: "very bad", 2: "bad", 3: "medium", 4: "good", 5: "very good"}
+    choices25 = {1: "No", 2: "low", 3: "medium", 4: "high", 5: "very high"}
+    choices26 = {1: "No", 2: "low", 3: "medium", 4: "high", 5: "very high"}
     with col1:
         gender_form = st.selectbox('Select your gender:', options=list(choices1.keys()), format_func=format_func1)
         father_education_form = st.selectbox("Father Qualification:", options=list(choices3.keys()), format_func=format_func3)
@@ -123,7 +132,7 @@ def app():
         paid_form = st.selectbox("Paid Courses:", options=list(choices13.keys()), format_func=format_func13)
         higher_form = st.selectbox("Higher Education:", options=list(choices16.keys()), format_func=format_func16)
         famrel_form = st.selectbox("Family Relationship:", options=list(choices19.keys()), format_func=format_func19)
-        dalc_form = st.selectbox("Daily Alcohol Consumptions:", options=list(choices22.keys()), format_func=format_func22)
+        dalc_form = st.selectbox("Daily Alcohol Consumptions:", options=list(choices26.keys()), format_func=format_func26)
         absences_form = st.selectbox("Absence:", range(0, 94), 1)
         G2_form = st.selectbox("G2 2nd period grade:", range(0, 21), 1)
     with col3:
@@ -134,7 +143,7 @@ def app():
         activities_form = st.selectbox("Activities/Co-cirricular:", options=list(choices14.keys()), format_func=format_func14)
         internet_form = st.selectbox("Internet at Home", options=list(choices17.keys()), format_func=format_func17)
         freetime_form = st.selectbox("Free Time:", options=list(choices20.keys()), format_func=format_func20)
-        walc_form = st.selectbox("Weekly Alcohol Comsumption:", options=list(choices23.keys()), format_func=format_func23)
+        walc_form = st.selectbox("Weekly Alcohol Comsumption:", options=list(choices25.keys()), format_func=format_func25)
 
     kk = [G1_form, G2_form]
     import statistics
